@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏗️ DEPÓSITO O GRILO - MELHOR PREÇO CAMARÁ! </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700;900&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            background: linear-gradient(135deg, #0c1428 0%, #1a2a44 50%, #0f1a30 100%);
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* HEADER FIXO */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(12, 20, 40, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 5px 30px rgba(255, 107, 53, 0.4);
+            border-bottom: 2px solid rgba(255, 107, 53, 0.3);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            background: linear-gradient(45deg, #ff6b35, #ffa726, #ff8f50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 20px rgba(255, 107, 53, 0.8);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 10px #ff6b35); }
+            to { filter: drop-shadow(0 0 25px #ff6b35); }
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-header {
+            padding: 12px 24px;
+            background: linear-gradient(45deg, #ff6b35, #ffa726);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-header:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.6);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background: 
+                linear-gradient(rgba(12, 20, 40, 0.9), rgba(12, 20, 40, 0.9)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="%230c1428"/><circle cx="200" cy="200" r="100" fill="%23ff6b35" opacity="0.1"/><circle cx="1000" cy="600" r="150" fill="%23ffa726" opacity="0.08"/><rect x="300" y="400" width="200" height="100" rx="10" fill="%23ff6b35" opacity="0.06"/></svg>');
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3.5rem, 10vw, 7rem);
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, #ff6b35, #ffa726, #ff8f50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        .rating-hero {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            font-size: 1.8rem;
+        }
+
+        .stars {
+            color: #ffd23f;
+            font-size: 2.5rem;
+        }
+
+        .rating-circle {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #ff6b35, #ffa726);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            color: white;
+            box-shadow: 0 0 30px rgba(255, 107, 53, 0.6);
+            font-size: 1.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            opacity: 0.95;
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 80px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3rem, 8vw, 4.5rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(45deg, #ff6b35, #ffa726);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            transition: all 0.4s ease;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b35, #ffa726, #ff6b35);
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 60px rgba(255, 107, 53, 0.4);
+            border-color: rgba(255, 107, 53, 0.6);
+        }
+
+        .card i {
+            font-size: 4rem;
+            background: linear-gradient(45deg, #ff6b35, #ffa726);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .card h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: #ffa726;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-big {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #ff6b35, #ffa726);
+            color: white;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn-big:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 53, 0.6);
+        }
+
+        /* CTA SECTION */
+        .cta-section {
+            background: linear-gradient(135deg, #ff6b35 0%, #ffa726 50%, #ff8f50 100%);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .cta-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(4rem, 10vw, 6rem);
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .cta-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+
+        .btn-cta {
+            font-size: 1.5rem;
+            padding: 20px 50px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .rating-hero {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* SCROLL ANIMATIONS */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">🏗️ O GRILO</div>
+            <div class="header-buttons">
+                <a href="tel:+5585985484593" class="btn-header">
+                    📞 LIGAR AGORA
+                </a>
+                <a href="#" class="btn-header">
+                    🚚 ENTREGA
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>DEPÓSITO O GRILO</h1>
+            <div class="rating-hero">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="rating-circle">
+                    4.6<br>
+                    <span style="font-size: 0.8rem;">56+</span>
+                </div>
+            </div>
+            <h2 class="hero-subtitle">🏠 MELHOR PREÇO CAMARÁ • AQUIRAZ</h2>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 1 - POR QUE ESCOLHER -->
+    <section class="section" style="background: rgba(26, 42, 68, 0.8);">
+        <div class="container">
+            <h2 class="section-title fade-in">POR QUE ESCOLHER O GRILO?</h2>
+            
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>📍 LOCALIZAÇÃO TOP</h3>
+                    <p>
+                        <strong>R. Zilma Assunção Pires</strong><br>
+                        Camará, Aquiraz - CE<br>
+                        <span style="color: #ffa726;">✓ FÁCIL ACESSO</span>
+                    </p>
+                    <a href="#" class="btn-big">🗺️ VER LOCALIZAÇÃO</a>
+                </div>
+
+                <div class="card fade-in">
+                    <i class="fas fa-phone"></i>
+                    <h3>📞 LIGUE JÁ!</h3>
+                    <p>
+                        <strong>(85) 98548-4593</strong><br>
+                        Fecha 17:30 • Abre 07:00<br>
+                        <span style="color: #ffa726;">ENTREGA RÁPIDA!</span>
+                    </p>
+                    <a href="tel:+5585985484593" class="btn-big">📲 WHATSAPP</a>
+                </div>
+
+                <div class="card fade-in">
+                    <i class="fas fa-tools"></i>
+                    <h3>🛠️ TUDO PRA CONSTRUIR</h3>
+                    <p>
+                        Materiais • Ferramentas<br>
+                        Acessórios • Muito mais!<br>
+                        <span style="color: #ffa726;">PREÇOS IMBATÍVEIS</span>
+                    </p>
+                    <a href="#" class="btn-big">VER PRODUTOS</a>
+                </div>
+
+                <div class="card fade-in">
+                    <i class="fas fa-users"></i>
+                    <h3>👨‍👩‍👧‍👦 ATENDIMENTO 5⭐</h3>
+                    <p>
+                        Dona Evanir & filhas<br>
+                        Cafezinho incluso ☕<br>
+                        <span style="color: #ffa726;">56 avaliações 4.6⭐</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">VEM PRO GRILO!</h2>
+            <p class="cta-text">MAIOR VARIEDADE • MELHOR PREÇO • ENTREGA RÁPIDA</p>
+            <a href="tel:+5585985484593" class="btn-big btn-cta">
+                🚀 LIGAR AGORA (85) 98548-4593
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll para header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(12, 20, 40, 0.98)';
+            } else {
+                header.style.background = 'rgba(12, 20, 40, 0.95)';
+            }
+        });
+
+        // Animações de fade in
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Efeito parallax suave no hero
+        window.addEventListener('mousemove', (e) => {
+            const hero = document.querySelector('.hero');
+            const x = (e.clientX / window.innerWidth) * 10;
+            const y = (e.clientY / window.innerHeight) * 10;
+            hero.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
+</body>
+</html>
